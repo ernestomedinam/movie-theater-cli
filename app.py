@@ -25,19 +25,6 @@ def get_choice(text = None):
         print("Please don't be a douche, input a valid number.")
         return 0
 
-def get_movie_menu_choice():
-    """ 
-        asks user for input and returns 
-        selected movie id or None 
-    """
-    choice = 0
-    movies = Movie.items
-    while choice != len(movies) + 1:
-        choice = get_choice("Please choose a movie\n")
-        if choice > 0 and choice <= len(movies):
-            return movies[choice - 1]
-    return None
-
 while choice != 4:
     print(main_menu)
     choice = get_choice()
@@ -49,7 +36,7 @@ while choice != 4:
     elif choice == 2:
         # list movies
         Movie.list_items()
-        chosen_movie = get_movie_menu_choice()
+        chosen_movie = Movie.get_movie_menu_choice()
         if chosen_movie:
             chosen_movie.show_detail()
             input("\nPress any key to continue...")
