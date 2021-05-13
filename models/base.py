@@ -11,7 +11,7 @@ class Base:
     # no incluye una propiedad "id"
     def __init__(self, **kwargs):
         # establece id aleatorio salvo que kwargs["id"] exista
-        self.id = os.urandom(8).hex() if id not in kwargs else kwargs["id"]
+        self.id = os.urandom(8).hex() if "id" not in kwargs else kwargs["id"]
         # este ciclo recorre todos los items() del diccionario
         # kwargs, donde cada item es un tupla con un par
         # (llave, valor), que es lo que recibimos destructurado
