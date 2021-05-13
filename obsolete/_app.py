@@ -101,10 +101,10 @@ def get_choice(text = None):
 
 def show_movie_detail(movie):
     """ prints movie dictionary """
-    print("\nThis is your selected movie")
+    print("\nThis is your selected movie:\n")
     for key, value in movie.items():
         print(f"{key}: {value}")
-    print("\n")
+    print("")
 
 while choice != 6:
     print(main_menu)
