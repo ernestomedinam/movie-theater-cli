@@ -5,6 +5,11 @@ class Genres(enum.Enum):
     ACTION = (1, "Action")
     COMEDY = (2, "Comedy")
     DRAMA = (3, "Drama")
+    HORROR = (4, "Horror")
+    THRILLER = (5, "Thriller")
+    SUSPENSE = (6, "Suspense")
+    SCIFI = (7, "Science fiction")
+    ADVENTURE = (8, "Adventure")
 
     # este método devuelve una lista de valores
     # legibles correspondientes a los miembros de

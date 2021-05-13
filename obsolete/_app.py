@@ -1,3 +1,10 @@
+# this was functional programming approached used for
+# first live session... this is obsolete and not used anymore
+
+# esta fue la aproximación desde paradigma de programación
+# funcional que usamos en la primera sesión en vivo... ha quedado
+# obsoleto y no esta en uso
+
 main_menu = """\n
     Welcome, just welcome.
 
